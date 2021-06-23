@@ -7,15 +7,43 @@ body{
     box-sizing: border-box;
     font-family: 'Kumbh Sans';
     background-color:  hsl(185, 75%, 39%);
-    display: grid;
-    height: 100vh;
 }
 
 
 .top-bg{
-    z-index: -11111;
+    background-image: url('images/bg-pattern-top.svg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    transform: rotate(45deg);
+    z-index: -999;
 }
+
+.bottom-bg{
+    background-image: url('images/bg-pattern-bottom.svg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    bottom: -50%;
+    right: -20%;
+    transform: rotate(45deg);
+    z-index: -999;
+}
+
 .container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: grid;
+    overflow: hidden;
+}
+
+
+.wrapper{
     place-self: center;
     color: hsl(0, 0%, 59%);
     background-color: white;
@@ -29,7 +57,7 @@ body{
     width: 300px;
 }
 
-img{
+.wrapper img{
     display: inline-block;
     border: 3px solid white;
     border-radius: 50%;
