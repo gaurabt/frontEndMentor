@@ -107,8 +107,3 @@ a{
     text-align: center;
 }
 
-@media (max-width: 600px){
-    .top-bg, .bottom-bg{
-        display: none;
-    }
-}
